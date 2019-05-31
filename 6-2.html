@@ -1,0 +1,78 @@
+<<!DOCTYPE html>
+<html>
+<head>
+	<title>calculator</title>
+	<style type="text/css">
+		#tabl{
+			background-color: #F0F8FF;
+			width: 300px;
+			height: 150px;
+
+		}
+		
+		#table input[type = "text"]{
+			
+
+		}
+
+	</style>
+	 
+	 <script type="text/javascript">
+	 	function checkUserName(){
+	 		var fname = document.fr.userName.value;
+	 		if(fname.length <= 0){
+	 			alert("用户名不能为空");			
+	 		}
+	 	}
+
+	 	function checkEmail(){
+	 		var fEml = document.fr.email.value;
+	 		for(i : fEml){
+	 			
+	 		}
+	 	}
+
+	 	function checkPW(){
+	 		var fpw = document.fr.userPW.value;
+	 		if(fpw.length < 6){
+	 			alert("密码位数必须大于6位");			
+	 		}
+	 	}
+
+		function check(){
+			checkUserName();
+			checkPW();
+
+		}
+
+	 </script>
+	
+
+</head>
+<body>
+	
+	<form action="" method="post" name = "fr">
+
+		<table id = "tabl">
+			<tr>
+				<td>电子邮件：</td>
+				<td><input type="text" name="email" /></td>
+			</tr>
+			<tr>
+				<td>用户名：</td>
+				<td><input type="text" name="userName" /></td>
+			</tr>
+			<tr>
+				<td>密码</td>
+				<td><input type="password" name="userPW" /></td>
+			</tr>
+			<tr>
+				<td>验证按钮</td>
+				<td><img src="button.png" onclick="check()"></td>
+			</tr>
+		</table>
+
+	</form>
+
+</body>
+</html>
