@@ -1,0 +1,102 @@
+<<!DOCTYPE html>
+<html>
+<head>
+	<title>6-3</title>
+
+	<style type="text/css">
+		
+
+		table{
+			font-family: "楷体";
+			border-collapse: collapse;
+			border-color: black;
+
+			margin: 0 auto;
+			width: 600px;
+			border:1px solid gray;
+		}
+
+		table td{
+			border: 1px solid black;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+		function vavalidateForm(){
+			if(checkRealName() && checkLoginName() &&checkEmail() && checkPW()){
+				return true;
+			}else{
+				return false;
+			}
+
+		}
+
+		function checkRealName(){
+			var sRealName = document.fr.tName.value;
+			if(sRealName.length == 0){
+				alert("User Name is not Empty!");
+				document.fr.tName.focus();
+			}
+		}
+
+		function checkLoginName(){
+			
+		}
+
+		function checkEmail(){
+			
+		}
+
+		function checkPW(){
+			
+		}
+
+	</script>
+</head>
+<body>
+
+<form name = "fr" method="post" action="" onsubmit="return validateForm()">
+<table>
+	
+	<tr>
+		<td colspan="2" style="text-align: center; font-weight: bold;
+		 background-color: cyan">用户注册</td>
+	</tr>
+
+	<tr>
+		<td>真实姓名：</td>
+		<td><input type="text" name="tName">(不能为空，不包括数字字符)</input></td>
+	</tr>
+
+	<tr>
+		<td>电子邮件：</td>
+		<td><input type="text" name="tEmail">(不能为空，必须包含@和.)</input></td>
+	</tr>
+	
+	<tr>
+		<td>登录名：</td>
+		<td><input type="text" name="tLoginName">(不能为空，a~9,0~9 ,'_')</input></td>
+	</tr>
+
+	<tr>
+		<td>密码：</td>
+		<td><input type="text" name="tPW">(不能为空，必须多余6个字符)</input></td>
+	</tr>
+
+	<tr>
+		<td>密码确认：</td>
+		<td><input type="text" name="tPWA">(与上面密码一致)</input></td>
+	</tr>
+	
+	<tr style="background-color: cyan">
+		<td><input type="reset" value = "reset"></td>
+		<td><input type="submit" value = "submit"></input></td>
+	</tr>
+
+</table>
+</form>
+
+
+</body>
+</html>
